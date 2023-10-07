@@ -1,0 +1,54 @@
+/* Center H1 */
+
+H1 {
+text-align: center;
+
+}
+
+
+
+
+
+
+
+/* Add borders to the table, rows, and cells */
+table {
+    border-collapse: collapse;  /* Collapse borders so they don't double up */
+    width: 100%;  /* Optional: You can set the width of the table */
+}
+
+table, th, td {
+    border: 1px solid black;  /* Visible lines */
+}
+
+/* Style the column headers with a grey background */
+thead th {
+    background-color: grey;
+    padding: 8px;  /* Add some padding for better appearance */
+    text-align: left;  /* Optional: Align header text to the left */
+}
+
+/* Add some padding to the table cells for better appearance */
+td {
+    padding: 8px;
+}
+
+/* Set the width for the first column */
+table td:nth-child(1),
+table th:nth-child(1) {
+    width: 100px;  /* or any specific width you desire */
+}
+
+/* Set the width for the second column */
+table td:nth-child(2),
+table th:nth-child(2) {
+    width: 150px;  /* or any specific width you desire */
+}
+
+/* Allow the third column to autofit. 
+This may not be strictly necessary unless you've set explicit widths elsewhere,
+but for clarity, we can explicitly set it to occupy the remaining space. */
+table td:nth-child(3),
+table th:nth-child(3) {
+    width: auto;
+}
